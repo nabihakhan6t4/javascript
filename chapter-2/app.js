@@ -52,4 +52,4 @@ document.write("Yah! I can write html content through javascript")
 
 //9. Store following string in a variable and show in alert and browser through JS
 var string = ("“▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”");
-alert(string)
+alert(string);
