@@ -50,3 +50,71 @@ if (number > 0) {
 } else {
   alert("The number is zero.");
 }
+/* 4. Write a program that takes a character (i.e. string of
+length 1) and returns true if it is a vowel, false otherwise*/
+
+var character = prompt("Enter a character:");
+
+if (character.length === 1) {
+  character = character.toLowerCase();
+
+  if (
+    character === "a" ||
+    character === "e" ||
+    character === "i" ||
+    character === "o" ||
+    character === "u"
+  ) {
+    alert("True: The character '" + character + "' is a vowel.");
+  } else {
+    alert("False: The character '" + character + "' is not a vowel.");
+  }
+} else {
+  alert("Please enter exactly one character.");
+}
+
+/*5. Write a program that
+a. Store correct password in a JS variable.
+b. Asks user to enter his/her password
+c. Validate the two passwords:
+i. Check if user has entered password. If not, then
+give message “ Please enter your password”
+ii. Check if both passwords are same. If they are
+same, show message “Correct! The password you
+entered matches the original password”. Show
+“Incorrect password” otherwise.*/
+
+var correctPassword = "SecretPassword123";
+
+var userPassword = prompt("Enter your password:");
+
+if (!userPassword) {
+  alert("Please enter your password.");
+} else {
+  if (userPassword === correctPassword) {
+    alert("Correct! The password you entered matches the original password.");
+  } else {
+    alert("Incorrect password.");
+  }
+}
+/* 6. This if/else statement does not work. Try to fix it:
+var greeting;
+var hour = 13;
+if (hour < 18) {
+greeting = "Good day";
+else
+greeting = "Good evening";
+}*/
+var greeting;
+var hour = prompt("Enter your current hour (0-23)");
+
+if (hour >= 0 && hour <= 23) {
+  hour = +hour;
+  if (hour < 18) {
+    alert("Good day");
+  } else {
+    alert("Good evening");
+  }
+} else {
+  alert("Invalid input. Please enter a valid hour between 0 and 23.");
+}
