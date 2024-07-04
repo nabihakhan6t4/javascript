@@ -118,3 +118,24 @@ if (hour >= 0 && hour <= 23) {
 } else {
   alert("Invalid input. Please enter a valid hour between 0 and 23.");
 }
+
+/*7. Write a program that takes time as input from user in 24
+hours clock format like: 1900 = 7pm. Implement the
+following case using if, else & else if statements*/
+// Taking input from the user (you can replace this with your input method)
+let userInput = prompt(
+  "Enter the time in 24-hour format (e.g., 1900 for 7pm):"
+);
+let time = userInput;
+
+if (time >= "0000" && time < "1200") {
+  console.log("Good morning!");
+} else if (time >= "1200" && time < "1700") {
+  console.log("Good afternoon!");
+} else if (time >= "1700" && time < "2100") {
+  console.log("Good evening!");
+} else if (time >= "2100" && time <= "2359") {
+  console.log("Good night!");
+} else {
+  console.log("Invalid time input.");
+}
