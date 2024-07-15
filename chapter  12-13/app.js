@@ -1,25 +1,25 @@
 // 1. Write a program that takes a character (number or string) in a variable & checks whether the given input is a number, uppercase letter or lower case letter. (Hint: ASCII codes:- A=65, Z=90, a=97, z=122).
 var userInput = prompt("Enter a character (number or letter):");
 var code = userInput.charCodeAt(0);
+
 if (code >= 48 && code <= 57) {
   alert(userInput + " is a number");
 } else if (code >= 65 && code <= 90) {
-  alert(userInput + "is a uppercase letter");
+  alert(userInput + " is an uppercase letter");
 } else if (code >= 97 && code <= 122) {
   alert(userInput + " is a lowercase letter");
 } else {
-  alert(userInput + "this is not a number or letter");
+  alert(userInput + " is not a number or letter");
 }
 
 /* 2. Write a JavaScript program that accept two integers and
 display the larger. Also show if the two integers are equal.*/
 
 var num1 = prompt("Enter the first integer:");
-
 var num2 = prompt("Enter the second integer:");
 
-num1 = +num1;
-num2 = +num2;
+num1 = +num1; // Convert to number
+num2 = +num2; // Convert to number
 
 var largerNumber;
 var message;
@@ -40,8 +40,7 @@ alert(message);
 state whether the number is positive, negative or zero.*/
 
 var number = prompt("Enter a number:");
-
-number = +number;
+number = +number; // Convert to number
 
 if (number > 0) {
   alert(number + " is a positive number.");
@@ -50,13 +49,14 @@ if (number > 0) {
 } else {
   alert("The number is zero.");
 }
+
 /* 4. Write a program that takes a character (i.e. string of
 length 1) and returns true if it is a vowel, false otherwise*/
 
 var character = prompt("Enter a character:");
 
 if (character.length === 1) {
-  character = character.toLowerCase();
+  character = character.toLowerCase(); // Convert to lowercase
 
   if (
     character === "a" ||
@@ -73,7 +73,7 @@ if (character.length === 1) {
   alert("Please enter exactly one character.");
 }
 
-/*5. Write a program that
+/* 5. Write a program that
 a. Store correct password in a JS variable.
 b. Asks user to enter his/her password
 c. Validate the two passwords:
@@ -85,7 +85,6 @@ entered matches the original password”. Show
 “Incorrect password” otherwise.*/
 
 var correctPassword = "SecretPassword123";
-
 var userPassword = prompt("Enter your password:");
 
 if (!userPassword) {
@@ -97,6 +96,7 @@ if (!userPassword) {
     alert("Incorrect password.");
   }
 }
+
 /* 6. This if/else statement does not work. Try to fix it:
 var greeting;
 var hour = 13;
@@ -109,7 +109,7 @@ var greeting;
 var hour = prompt("Enter your current hour (0-23)");
 
 if (hour >= 0 && hour <= 23) {
-  hour = +hour;
+  hour = +hour; // Convert to number
   if (hour < 18) {
     alert("Good day");
   } else {
