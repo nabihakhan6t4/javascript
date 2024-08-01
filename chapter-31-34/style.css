@@ -2,16 +2,22 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
-}
-
-button {
+  }
+  
+  button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-}
-
-#funDayMessage, #daysMessage, #minutesDisplay, #dateDisplay, #ramadanMessage {
+  }
+  
+  .result,
+  #funDayMessage,
+  #daysMessage,
+  #minutesDisplay,
+  #dateDisplay,
+  #ramadanMessage {
     margin-top: 20px;
     font-size: 24px;
     color: blue;
-}
+  }
+  
