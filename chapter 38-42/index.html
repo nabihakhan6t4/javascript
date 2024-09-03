@@ -1,33 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leap Year Checker and Power Function</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Leap Year Checker</h1>
-        <input type="number" id="yearInput" placeholder="Enter a year">
-        <button onclick="checkLeapYear()">Check Leap Year</button>
-        <p id="result"></p>
-
-        <h1>Power Function</h1>
-        <input type="number" id="baseInput" placeholder="Enter base">
-        <input type="number" id="exponentInput" placeholder="Enter exponent">
-        <button onclick="calculatePower()">Calculate Power</button>
-        <p id="powerResult"></p>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Custom CSS -->
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="mb-4">Leap Year Checker</h1>
+      <div class="form-group">
+        <input
+          type="number"
+          id="yearInput"
+          class="form-control"
+          placeholder="Enter a year"
+        />
+      </div>
+      <button class="btn btn-primary" onclick="checkLeapYear()">
+        Check Leap Year
+      </button>
+      <p id="result" class="mt-3"></p>
     </div>
-    <div class="container">
-        <h1>Triangle Area Calculator</h1>
-        <input type="number" id="sideA" placeholder="Enter side a">
-        <input type="number" id="sideB" placeholder="Enter side b">
-        <input type="number" id="sideC" placeholder="Enter side c">
-        <button onclick="calculateTriangleArea()">Calculate Area</button>
-        <p id="areaResult"></p>
+
+    <div class="container mt-5">
+      <h1 class="mb-4">Power Function</h1>
+      <div class="form-group">
+        <input
+          type="number"
+          id="baseInput"
+          class="form-control"
+          placeholder="Enter base"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="number"
+          id="exponentInput"
+          class="form-control"
+          placeholder="Enter exponent"
+        />
+      </div>
+      <button class="btn btn-primary" onclick="calculatePower()">
+        Calculate Power
+      </button>
+      <p id="powerResult" class="mt-3"></p>
     </div>
 
+    <div class="container mt-5">
+      <h1 class="mb-4">Triangle Area Calculator</h1>
+      <div class="form-group">
+        <input
+          type="number"
+          id="sideA"
+          class="form-control"
+          placeholder="Enter side a"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="number"
+          id="sideB"
+          class="form-control"
+          placeholder="Enter side b"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="number"
+          id="sideC"
+          class="form-control"
+          placeholder="Enter side c"
+        />
+      </div>
+      <button class="btn btn-primary" onclick="calculateTriangleArea()">
+        Calculate Area
+      </button>
+      <p id="areaResult" class="mt-3"></p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
