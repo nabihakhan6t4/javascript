@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Functions Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Current Date and Time</h1>
+    <p id="dateTime"></p>
+
+    <h1>Welcome!</h1>
+    <button onclick="greetUser()">Greet Me</button>
+    <p id="greetingMessage"></p>
+
+    <h1>Add Two Numbers</h1>
+    <button onclick="addTwoNumbers()">Calculate Sum</button>
+    <p id="sumResult"></p>
+
+    <h1>Simple Calculator</h1>
+    <input type="number" id="num1" placeholder="Enter first number" />
+    <input type="number" id="num2" placeholder="Enter second number" />
+    <select id="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <button onclick="calculate()">Calculate</button>
+    <p id="calculatorResult"></p>
+
+    <h1>Square a Number</h1>
+    <input type="number" id="squareInput" placeholder="Enter a number" />
+    <button onclick="displaySquare()">Square It</button>
+    <p id="squareResult"></p>
+
+    <h1>Factorial Calculator</h1>
+    <input
+      type="number"
+      id="factorialInput"
+      placeholder="Enter a number"
+      min="0"
+    />
+    <button onclick="calculateFactorial()">Calculate Factorial</button>
+    <p id="factorialResult"></p>
+
+    <h1>Counting Sequence</h1>
+    <label for="startNumber">Start Number:</label>
+    <input type="number" id="startNumber" placeholder="Enter start number" />
+    <br />
+    <label for="endNumber">End Number:</label>
+    <input type="number" id="endNumber" placeholder="Enter end number" />
+    <br />
+    <button onclick="displayCounting()">Display Counting</button>
+    <p id="countingResult"></p>
+
+    <h1>Hypotenuse Calculator</h1>
+    <label for="base">Base:</label>
+    <input type="number" id="base" placeholder="Enter base" step="any" />
+    <br />
+    <label for="perpendicular">Perpendicular:</label>
+    <input
+      type="number"
+      id="perpendicular"
+      placeholder="Enter perpendicular"
+      step="any"
+    />
+    <br />
+    <button onclick="calculateHypotenuse()">Calculate Hypotenuse</button>
+    <p id="hypotenuseResult"></p>
+
+    <h1>Rectangle Area Calculator</h1>
+    <label for="width">Width:</label>
+    <input type="number" id="width" placeholder="Enter width" />
+    <br />
+    <label for="height">Height:</label>
+    <input type="number" id="height" placeholder="Enter height" />
+    <br />
+    <button onclick="displayArea()">Calculate Area</button>
+    <p id="areaResult"></p>
+
+    <h1>Palindrome Checker</h1>
+    <input type="text" id="inputString" placeholder="Enter a string" />
+    <button onclick="checkPalindrome()">Check</button>
+    <p id="palindromeResult"></p>
+
+    <h1>Capitalize First Letters</h1>
+    <input type="text" id="inputSentence" placeholder="Enter a sentence" />
+    <button onclick="capitalizeSentence()">Capitalize</button>
+    <p id="outputSentence"></p>
+
+    <h1>Longest Word Finder</h1>
+    <input type="text" id="longestWordInput" placeholder="Enter a sentence" />
+    <button onclick="findLongestWord()">Find Longest Word</button>
+    <p id="longestWordResult"></p>
+
+    <h1>Count Letter Occurrences</h1>
+    <input type="text" id="letterCountString" placeholder="Enter a string" />
+    <input
+      type="text"
+      id="letterCountLetter"
+      placeholder="Enter a letter"
+      maxlength="1"
+    />
+    <button onclick="countLetterOccurrences()">Count Occurrences</button>
+    <p id="letterCountResult"></p>
+
+    <h1>Circle Properties</h1>
+    <input
+      type="number"
+      id="circleRadius"
+      placeholder="Enter the radius"
+      step="any"
+    />
+    <button onclick="calcCircumference()">Calculate Circumference</button>
+    <p id="circumferenceResult"></p>
+    <button onclick="calcArea()">Calculate Area</button>
+    <p id="areaResult"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
