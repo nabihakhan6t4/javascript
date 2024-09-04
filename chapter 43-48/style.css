@@ -1,0 +1,18 @@
+/* Custom styles for the project */
+img {
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.clickable-image {
+  cursor: pointer;
+}
+
+.delete-btn {
+  cursor: pointer;
+}
+
+/* Style for the counter display */
+#counterValue {
+  font-size: 3rem;
+  margin: 20px 0;
+}
