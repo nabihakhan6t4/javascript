@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Signup Form</h1>
+      <form id="signupForm" class="mt-4">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-success">Sign Up</button>
+      </form>
+      <div class="result mt-4" id="result"></div>
+    </div>
+    <div class="container mt-5">
+      <h1 class="text-center">Item Details</h1>
+      <div class="item-content">
+        <p id="itemText">
+          This is a short preview of the item details. The complete details are
+          hidden initially.
+          <span id="moreText" class="d-none">
+            Here are the full details of the item. This part is revealed only
+            when you click on "Read more" button. You can put as much
+            information as you want here.</span
+          >
+        </p>
+        <button id="readMoreBtn" class="btn btn-primary">Read more</button>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <h1 class="text-center">Student Details</h1>
+
+      <!-- Add Student Form -->
+      <form id="studentForm" class="mt-4">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="age"
+            name="age"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="grade">Grade:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="grade"
+            name="grade"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Student</button>
+      </form>
+
+      <!-- Edit Student Form (Hidden) -->
+      <div id="editFormContainer" class="mt-4" style="display: none">
+        <h2>Edit Student</h2>
+        <form id="editForm">
+          <div class="form-group">
+            <label for="editName">Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="editName"
+              name="name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="editAge">Age:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="editAge"
+              name="age"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="editGrade">Grade:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="editGrade"
+              name="grade"
+              required
+            />
+          </div>
+
+          <input type="hidden" id="editRowIndex" />
+          <button type="submit" class="btn btn-success">Update Student</button>
+          <button type="button" id="cancelEdit" class="btn btn-secondary">
+            Cancel
+          </button>
+        </form>
+      </div>
+
+      <!-- Student Table -->
+      <table class="table mt-4">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="studentTableBody"></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
